@@ -1,0 +1,91 @@
+.search{
+  display: flex;
+}
+.s{
+  margin: 0 auto;
+}
+.search_l{
+  float: left;
+  text-align: center;
+}
+.search_r{
+  float: left;
+}
+.product{
+  margin-top: 20px;
+ display: flex;
+ flex-wrap:wrap;
+ justify-content:flex-start;
+}
+.product_t{
+  width: 150px;
+  height: 100px;  
+  padding: 10rpx;
+  /* border: 1px solid black; */
+  position:relative; 
+}
+.products_img{
+   position:absolute; 
+  z-index:1;
+}
+.Title{
+  position:absolute; 
+  z-index:2;
+  margin-top: 80px;
+  /* border: 1px solid black; */
+}
+.product_b{
+  display: inline;
+}
+.product_b_l{
+  float: inline-start;
+}
+.product_b_r{
+  float: inline-end;
+}
+image{
+  width: 150px;
+  height: 150px;
+}
+.bd{
+  border: 2px solid black;
+  border-radius: 10%;
+}
+.function{
+display: flex;
+align-items:center;
+}
+.one{
+  background-color: gold;
+  float: left;
+  margin: 30rpx 50rpx;
+  border-radius: 50%;
+  width: 130rpx;
+  height:130rpx;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  
+}
+.two{
+  background-color: gold;
+  float: left;
+  margin: 30rpx 60rpx;
+  border-radius: 50%;
+  width: 130rpx;
+  height:130rpx;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+.three{
+  background-color: gold;
+  float: left;
+  margin: 30rpx 70rpx;
+  border-radius: 50%;
+  width: 130rpx;
+  height:130rpx;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}

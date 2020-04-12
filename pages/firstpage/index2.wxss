@@ -1,0 +1,82 @@
+.fl{
+  float: left;
+}
+.fr{
+  float:  right;
+}
+.header{
+   display: flex;
+   justify-content: center;
+
+}
+.header_1{
+  float: left;
+  text-align: center;
+}
+.bd{
+  border: 2px solid black;
+  border-radius: 10%;
+}
+.nav{
+  white-space: nowrap;
+  padding: 5rpx;
+}
+.nav_item{
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.nav_item.active{
+  border-bottom: 3px solid pink;
+}
+.text2{
+  margin-left:60px;
+}
+.picture{
+  height: 120px;
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.background {
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.Detailed
+{
+  /* border: 1px solid black; */
+  width: 165px;
+  height: 150px;
+  margin-top: 35px;
+  display:flex;
+ flex-direction: column;
+
+}
+.message{
+  font-size: 90%;
+  color:darkgray;
+  font-weight:bold;
+}
+.inmassage{
+  height: 10px;
+  width: 160px;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+}
+textarea{
+  float: left;
+  width:318px;
+  height:150px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 10%;
+
+}
+image{
+  height: 120px;
+  width: 120px;
+}

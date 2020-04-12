@@ -1,0 +1,35 @@
+<view class="body">
+<!-- header区 -->
+ <view class="header">
+ <view class="header_1 bd">
+      <input  type="text" placeholder="请选择所卖商品类型"  disabled="disabled"  ></input> 
+    </view>
+ </view>
+<!--类型导航-->
+<view class="nav_wrap">
+  <scroll-view class="nav" scroll-x="true"  upper-threshold="50" lower-threshold="50" >
+    <view bindtap="activeNav" data-index="{{index}}" class="nav_item {{index===currentIndex?'active':''}}" wx:for="{{navList}}" wx:key="{{index}}">
+      {{item}}
+    </view>
+  </scroll-view>
+</view>
+<!-- 拍照上传区 -->
+ <view class="picture fl  bd"  bindtap="chooseimage">
+  <image class='background' src="../../image/picture01.jpg" mode="aspectFill"></image>
+ <image src="{{tempFilePaths }}" mode="scaleToFill"/>
+ </view>
+ <!-- 商品数据区 -->
+ <view class="Detailed fr">
+ <view wx:for="{{messages}}"> 
+    <text class="message">{{item}}</text>
+    <input class="inmassage"></input>
+ </view>
+ </view>
+ <!-- 商品详情区 -->
+ <view class="information fl">
+ <form bindsubmit="bindFormSubmit">
+    <textarea   placeholder="商品详情:" name="textarea"/>
+    <button form-type="submit"> 提交 </button>
+ </form>
+</view>
+</view>

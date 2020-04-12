@@ -1,0 +1,47 @@
+<!--搜索框-->
+<view class="search">
+<view class="s">
+  <view class="search_l bd">
+  <input  type="text" placeholder="店铺名称"  maxlength="140" ></input> 
+  </view>
+  <view class="search_r">
+  <icon class="" type="search" size="23" color=""></icon>
+  </view>
+</view>
+</view>
+<!--店铺选择区-->
+<view class="products">
+<view class="product">
+  <view class="product_t" wx:for="{{product_img}}" wx:key="{{index}}">
+       <image class="products_img" src="{{item}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="Title" wx:for="{{title}}"  wx:for-index="title_index"wx:for-item="title_item">  
+       <text class="products_text" wx:if="{{title_index==index}}">{{title_item}}</text>
+      </view> 
+  </view>
+</view>
+</view>
+<!--伪.导航栏-->
+<view class="fuction">
+<navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+    <view class="one">
+    <text class="" selectable="false" space="false" decode="false">
+      全部宝贝
+    </text>   
+  </view>
+  </navigator>
+  <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+    <view class="two">
+    <text class="" selectable="false" space="false" decode="false">
+      宝贝分类
+    </text>   
+  </view>
+  </navigator>
+  <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+    <view class="three">
+    <text class="" selectable="false" space="false" decode="false">
+      管理店铺
+    </text>   
+  </view>
+  </navigator>
+</view>
+
